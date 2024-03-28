@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    color: #1d1d1d;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 2rem 15rem 0 15rem;
+    background-color: #fff;
+}
+
+/*NAVIGATION*/
+
+.nav-container {
+    height: 10vh;
+    background-color: #ece7e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    border: none;
+    border-radius: 50px 50px 0 0;
+    padding: 1rem 0 0 0;
+}
+
+.logo {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    margin: 0 0 0 5rem;
+    color: #1d1d1d;
+
+}
+
+.nav-links {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 3rem;
+    margin: 0 5rem 0 0;
+}
+
+.link1:hover, .link2:hover, .link3:hover, .link4:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+/* HERO */
+
+.hero-container {
+    background-color: #ece7e1;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.profile-photo {
+    height: 350px;
+    margin: 0 25rem 0 0; 
+    border-radius: 50%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 25rem;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2.5rem;
+}
+
+.resume-btn, .contact-btn {
+    border: 2px #1d1d1d solid;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0 8px;
+    font-size: 1.2rem;
+}
+
+.resume-btn:hover, .contact-btn:hover {
+    background-color: #1d1d1d;
+}
+
+.resume-btn > a:hover, .contact-btn > a:hover {
+    color: #fff;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 8rem;
+}
+
+.hero-description > p {
+    font-size: 1.5rem;
+    color: #1a1818;
+}
+
+/* HOBBIES */
+
+.hobbies-container {
+    background-color: #ece7e1;
+    padding: 5rem 0;
+}
+
+.hobbies-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbies-container .title {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 5rem;
+}
+
+.hobbies-title > p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hobbies-content img {
+    height: 200px;
+    border: 4px #1d1d1d solid;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+h4, p {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.hobbies-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin: 0 17rem;
+}
+
+.hobbies-gaming, .hobbies-anime, .hobbies-learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* PROJECTS */
+
+.projects-container {
+    background-color: #ece7e1;
+    padding: 5rem 0;
+}
+
+.projects-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-container .title {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 5rem;
+}
+
+.projects-title > p {
+    font-size: 1.5rem;
+}
+
+.projects-content img {
+    height: 250px;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin: 0 17rem;
+}
+
+.projects-game-store, .projects-watched-anime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.view-more-btn {
+    border: 2px #1d1d1d solid;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0 8px;
+    font-size: 1.2rem;
+}
+
+.view-more-btn:hover {
+    background-color: #1d1d1d;
+}
+
+.view-more-btn > a:hover {
+    color: #fff;
+}
+
+/*CONTACT ME*/
+
+.contact-container {
+    background-color: #ece7e1;
+    border: none;
+    border-radius: 0 0 50px 50px;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-title > h4 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 5rem;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin: 0 17rem;
+}
+
+.contact-item img {
+    height: 35px;
+}
+
+.contact-phone, .contact-email, .contact-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.footer-container > p {
+    font-size: 0.8rem;
+    color: #575353;
+}
+
+@media (max-width: 1230px) {
+
+    body {
+        background-color: #ece7e1;
+        margin: 0 1.5rem;
+    }
+
+    hr {
+        margin: 3rem;
+    }
+
+    .nav-container {
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .logo {
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 8rem 0 8rem;
+    }
+
+    .profile-photo {
+        height: 200px;
+        order: 1;
+        margin: 0;
+    }
+    
+    .hero-content {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hobbies-container {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .hobbies-title {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hobbies-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hobbies-content, .hobbies-title {
+        margin: 0;
+        align-items: center;
+    }
+
+    .projects-container {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .projects-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects-title {
+        gap: 1rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-title > .title {
+        text-align: center;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-container {
+        width:auto;
+        background-color: #fff;
+    }
+
+} 
