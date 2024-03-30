@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 2rem 15rem 0 15rem;
     background-color: #fff;
@@ -16,7 +20,6 @@ body {
 /*NAVIGATION*/
 
 .nav-container {
-    height: 10vh;
     background-color: #ece7e1;
     display: flex;
     justify-content: center;
@@ -46,17 +49,19 @@ body {
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 2px;
+    transform: translateY(-4px);
+    transition: 0.3s;
 }
 
 /* HERO */
 
 .hero-container {
     background-color: #ece7e1;
-    height: 88vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
+    padding: 5rem 0;
 }
 
 .profile-photo {
@@ -87,6 +92,7 @@ body {
 
 .resume-btn:hover, .contact-btn:hover {
     background-color: #1d1d1d;
+    transition: 0.5s;
 }
 
 .resume-btn > a:hover, .contact-btn > a:hover {
@@ -218,6 +224,7 @@ h4, p {
 
 .view-more-btn:hover {
     background-color: #1d1d1d;
+    transition: 0.5s;
 }
 
 .view-more-btn > a:hover {
@@ -294,7 +301,6 @@ h4, p {
     }
 
     .nav-container {
-        height: 20vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -384,11 +390,6 @@ h4, p {
     .contact-item {
         flex-direction: column;
         gap: 1.5rem;
-    }
-
-    .footer-container {
-        width:auto;
-        background-color: #fff;
     }
 
 } 

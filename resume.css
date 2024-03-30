@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    color: #1d1d1d;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 2rem 15rem 0 15rem;
+    background-color: #fff;
+}
+
+/*NAVIGATION*/
+
+.nav-container {
+    background-color: #ece7e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    border: none;
+    border-radius: 50px 50px 0 0;
+    padding: 1rem 0 0 0;
+}
+
+.logo {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    margin: 0 0 0 5rem;
+    color: #1d1d1d;
+
+}
+
+.nav-links {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 3rem;
+    margin: 0 5rem 0 0;
+}
+
+.link1:hover, .link2:hover, .link3:hover, .link4:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    transform: translateY(-4px);
+    transition: 0.3s;
+}
+
+/* HERO */
+
+.header-profile img {
+    height: 200px;
+    border: none;
+    border-radius: 50%;
+}
+
+.header-container {
+    background-color: #ece7e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 3rem 25rem;
+}
+
+.education-container {
+    background-color: #ece7e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    padding: 3rem 25rem;
+}
+
+.work-container {
+    background-color: #ece7e1;
+    border: none;
+    border-radius: 0 0 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 3rem 25rem;
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.footer-container > p {
+    font-size: 0.8rem;
+    color: #575353;
+}
+
+@media (max-width: 1230px) {
+
+    body {
+        background-color: #ece7e1;
+        margin: 0 1.5rem;
+    }
+
+    hr {
+        margin: 3rem;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .logo {
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .header-container {
+        margin: 0 3rem;
+        padding: 3rem 0;
+        flex-direction: column-reverse;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .header-profile {
+        height: 150px;
+        order: 1;
+        margin: 0;
+    }
+    
+    .header-content {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
